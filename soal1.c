@@ -3,7 +3,8 @@
  *   Hari dan Tanggal    : Senin, 27 April 2026
  *   Nama (NIM)          : Muhammad Fadhil Abyan (13224008)
  *   Nama File           : soal1.c
- *   Deskripsi           : 
+ *   Deskripsi           : Terdapat suatu array dinamis yang menampung pembacaan input data. 
+                           Kemudian, array dinamis tersebut diurutkan dari besar ke kecil dan dihitung mediannya.
  */
 
 
@@ -44,7 +45,7 @@ void printArray(int* arr, int n){
             printf(" ");
         }
     }
-    printf("\n");
+    printf(" ");
 }
   
  int main(){
@@ -81,13 +82,13 @@ void printArray(int* arr, int n){
     if(count != 0){
         sortArray(data, count);
         float med = median(data, count);
-        printf("COUNT %d\n", count);
+        printf("COUNT %d ", count);
         printArray(data, count);
         if (count % 2 == 0){
-            printf("MEDIAN %.2f\n", med);
+            printf("MEDIAN %.2f", med);
         }
         else{
-            printf("MEDIAN %d\n", (int)med);
+            printf("MEDIAN %d", (int)med);
         }
     }else{
         return 1;
